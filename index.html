@@ -166,18 +166,29 @@
       <p>あなたのビジネスや開発プロジェクトについて、現状を診断し、最適な提案をお届けします。所要時間：約3分、完全無料です。</p>
       <a href="https://docs.google.com/forms/d/1r7uBtmvtOOIvulyOCVvk0Qt0KayR9D6uQDYwsKX1pCo/viewform"
          class="cta cta--lg" target="_blank" rel="noopener noreferrer"
-         role="button" aria-label="無料診断と提案フォーム（新しいタブで開く）">無料診断を受ける</a>
+         role="button" aria-label="無料診断と提案フォーム（新しいタブで開く）"
+         onclick="gtag('event', 'click_diagnosis_button', {
+         event_category: 'engagement',
+         event_label: 'diagnosis_form'
+        });">
+        無料診断を受ける</a>
     </section>
 
     <!-- フィードバック -->
     <section id="feedback" class="section">
-      <h2>あなたの声を、次の開発に。</h2>
-      <p>このポートフォリオや紹介したサービスについて、あなたの率直な声を聞かせてください。フィードバックは、次に創るプロダクトのヒントになります。</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdco35yXOvbshmbyOUvZB4LdcZF-uUE3Twc-J9a6Y3yn3v1zg/viewform"
-         class="cta" target="_blank" rel="noopener noreferrer"
-         role="button" aria-label="フィードバックフォーム（新しいタブで開く）">フィードバックを送る</a>
-      <p style="font-size: 0.9rem; margin-top: 0.5rem;">※所要時間：約2分。匿名でも構いません。</p>
-    </section>
+  <h2>あなたの声を、次の開発に。</h2>
+  <p>このポートフォリオや紹介したサービスについて、あなたの率直な声を聞かせてください。フィードバックは、次に創るプロダクトのヒントになります。</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdco35yXOvbshmbyOUvZB4LdcZF-uUE3Twc-J9a6Y3yn3v1zg/viewform"
+     class="cta" target="_blank" rel="noopener noreferrer"
+     role="button" aria-label="フィードバックフォーム（新しいタブで開く）"
+     onclick="gtag('event', 'click_feedback_button', {
+       event_category: 'engagement',
+       event_label: 'feedback_form'
+     });">
+    フィードバックを送る
+  </a>
+  <p style="font-size: 0.9rem; margin-top: 0.5rem;">※所要時間：約2分。匿名でも構いません。</p>
+</section>
 
   </main>
 
