@@ -2,7 +2,7 @@
 
 ## 🧭 このサイトについて
 
-![デモ動画]()
+![デモ動画](https://github.com/TomoProgrammingDayori/TomoProgrammingDayori.github.io/blob/main/%E8%B3%87%E6%96%99/%E3%83%87%E3%83%A2%E5%8B%95%E7%94%BB.gif)
 
 このWebページは、**中小企業やフリーランスの業務を「AI × Webアプリ」で効率化する開発パートナー**としての実績・サービス・思想を紹介するポートフォリオサイトです。
 
