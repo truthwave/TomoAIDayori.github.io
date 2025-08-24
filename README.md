@@ -1,6 +1,7 @@
 # ともプログラム便り｜AI×Webで業務を“ラクにする”ポートフォリオ
 
 ## 🧭 このサイトについて
+<img width="925" height="523" alt="診断→提案→販売の流れ" src="https://github.com/user-attachments/assets/050c910e-ebf3-47af-95c6-3171e09c78b8" />
 
 ![デモ動画](https://github.com/TomoProgrammingDayori/TomoProgrammingDayori.github.io/blob/main/%E8%B3%87%E6%96%99/%E3%83%87%E3%83%A2%E5%8B%95%E7%94%BB.gif)
 
