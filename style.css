@@ -218,3 +218,15 @@ body {
   box-shadow: 0 3px 10px rgba(0,0,0,.1);
 }
 
+a {
+  color: var(--hero-text); /* 例：#5c4432 などに揃える */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #7b341e; /* 少し明るめ or 暖色寄りに振るとよい */
+}
+a:focus-visible {
+  outline: 3px solid rgba(124, 58, 18, 0.5); /* 暖色寄りに */
+  outline-offset: 2px;
+}
