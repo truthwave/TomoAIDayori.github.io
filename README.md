@@ -6,7 +6,7 @@
 
 このWebページは、**中小企業やフリーランスの業務を「AI × Webアプリ」で効率化する開発パートナー**としての実績・サービス・思想を紹介するポートフォリオサイトです。
 
-[👉 サイトを開く](https://tomoprogrammingdayori.github.io/)
+[👉 サイトを開く](https://tomoAIdayori.github.io/)
 
 ---
 
@@ -34,7 +34,7 @@
 ## 🧩 強みと差別化ポイント
 
 - Microsoft 認定「生成AIによる生産性の向上」コース修了
-  - ➡️[ 学習記録のGitHubリポジトリを見る](https://github.com/TomoProgrammingDayori/ai-productivity-cert-practical-output)
+  - ➡️[ 学習記録のGitHubリポジトリを見る](https://github.com/TomoAIDayori/ai-productivity-cert-practical-output)
 - 実務ベースで開発した**AI×業務ツール**5種掲載
 - 誰でも使いやすい**無料診断フォーム**付き
 - 軽量設計 + スマホ対応（1ファイルCSS）
