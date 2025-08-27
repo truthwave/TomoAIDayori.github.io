@@ -2,7 +2,7 @@
 
 ## 🧭 このサイトについて
 
-![デモ動画](https://github.com/user-attachments/assets/454d9736-1523-4062-acdc-b6a9d2f5a0a5)
+![デモ動画](https://github.com/user-attachments/assets/0cc8336e-bf19-496d-bbb5-4b4f1724486a)
 
 
 このWebページは、**中小企業やフリーランスの業務を「AI × Webアプリ」で効率化する開発パートナー**としての実績・サービス・思想を紹介するポートフォリオサイトです。
