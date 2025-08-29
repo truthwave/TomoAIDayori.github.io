@@ -2,7 +2,7 @@
 
 ## 🧭 このサイトについて
 
-![デモ動画](https://github.com/user-attachments/assets/dc457d24-933f-4057-84ab-5d863446e285)
+![デモ動画](https://github.com/TomoAIDayori/TomoAIDayori.github.io/blob/main/%E8%B3%87%E6%96%99/%E3%83%87%E3%83%A2%E5%8B%95%E7%94%BB.gif)
 
 このWebページは、**中小企業やフリーランスの業務を「AI × Webアプリ」で効率化する開発パートナー**としての実績・サービス・思想を紹介するポートフォリオサイトです。
 
