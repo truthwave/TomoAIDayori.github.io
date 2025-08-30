@@ -2,7 +2,7 @@
 
 ## 🧭 About This Site
 
-![Demo Video](https://github.com/TomoAIDayori/TomoAIDayori.github.io/blob/main/%E8%B3%87%E6%96%99/%E3%83%87%E3%83%A2%E5%8B%95%E7%94%BB.gif)
+![Demo Video](https://github.com/TomoAIDayori/TomoAIDayori.github.io/blob/main/English/Materials/Demo%20Movie.gif)
 
 This webpage is a portfolio site introducing our track record, services, and philosophy as a **development partner that streamlines the operations of small and medium-sized businesses and freelancers using “AI × Web Apps”.**
 
