@@ -43,20 +43,18 @@
 
 
 <body>
-  
   <!-- Skip link -->
-  <a class="skip-link" href="#main">Skip to main content</a>
-    <!-- Hero -->
-<nav class="lang-switch" aria-label="Language switcher">
-  <a href="/" hreflang="ja" lang="ja">日本語</a>
-</nav>
-  </div>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Hero -->
+<header class="hero" role="banner">
+  <nav class="lang-switch" aria-label="Language switcher">
+    <a href="/" hreflang="ja" lang="ja">日本語</a>
+  </nav>
   <h1>Tomo AI Dayori</h1>
   <p>A development partner that makes work easier for SMBs and freelancers
      with <strong>AI × web apps</strong>.</p>
 </header>
-
-
 
   <!-- Main landmark -->
   <main id="main" role="main">
@@ -156,9 +154,9 @@
     <section id="tech" class="section">
       <h2>Tech Stack</h2>
       <ul class="tech-list">
-        <li>▶️ Frontend: Next.js, React, Tailwind CSS</li>
-        <li>▶️ Backend: Supabase, OpenAI API</li>
-        <li>▶️ Infrastructure: Vercel, Docker</li>
+        <li><span aria-hidden="true">▶️</span>Frontend: Next.js, React, Tailwind CSS</li>
+        <li><span aria-hidden="true">▶️</span>Backend: Supabase, OpenAI API</li>
+        <li><span aria-hidden="true">▶️</span>Infrastructure: Vercel, Docker</li>
         <li>and more...</li>
       </ul>
     </section>
@@ -267,7 +265,7 @@
       <p>Tell us about your business or development project. We’ll diagnose the current state and deliver a tailored proposal. Time required: ~3 minutes. Completely free.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZqlT1lHF6tNUYDIBoBPDHhdqT6lYpDl_Kl7N2QauxoJv3_g/viewform?usp=dialog"
          class="cta cta--lg" target="_blank" rel="noopener noreferrer"
-         role="button" aria-label="Open the free assessment & proposal form in a new tab"
+         aria-label="Open the free assessment & proposal form in a new tab"
          onclick="gtag('event', 'click_diagnosis_button', { event_category: 'engagement', event_label: 'diagnosis_form' });">
         Get a Free Assessment
       </a>
@@ -279,7 +277,7 @@
       <p>Share your candid thoughts on this portfolio and the services introduced here. Your feedback becomes a hint for what we build next.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSefO9WQEQOMclfzoi7WNjl75KvJwqH9Ku17lMqb1FxlHE2hjg/viewform?usp=dialog"
          class="cta" target="_blank" rel="noopener noreferrer"
-         role="button" aria-label="Open the feedback form in a new tab"
+         aria-label="Open the feedback form in a new tab"
          onclick="gtag('event', 'click_feedback_button', { event_category: 'engagement', event_label: 'feedback_form' });">
         Send Feedback
       </a>
