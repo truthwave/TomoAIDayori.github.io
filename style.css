@@ -230,3 +230,21 @@ a:focus-visible {
   outline: 3px solid rgba(124, 58, 18, 0.5); /* 暖色寄りに */
   outline-offset: 2px;
 }
+
+.lang-switch {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+}
+.lang-switch a {
+  display: inline-block;
+  font-size: .9rem;
+  padding: .35rem .7rem;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--hero-text);
+  background: #fff;
+}
+.lang-switch a:hover { background: #f5f5f5; }
+
