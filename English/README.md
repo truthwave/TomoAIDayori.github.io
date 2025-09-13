@@ -1,4 +1,4 @@
-# Tomo AI Dayori｜Portfolio of AI×Web Solutions to Make Work Easier
+# Truth Wave｜Portfolio of AI×Web Solutions to Make Work Easier
 
 ## 🧭 About This Site
 
