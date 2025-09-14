@@ -6,7 +6,7 @@
 
 このWebページは、**中小企業やフリーランスの業務を「AI × Webアプリ」で効率化する開発パートナー**としての実績・サービス・思想を紹介するポートフォリオサイトです。
 
-[👉 サイトを開く](https://tomoAIdayori.github.io/)
+[👉 サイトを開く](https://truth-wave-github-io.vercel.app/)
 
 ---
 
