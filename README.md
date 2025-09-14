@@ -1,61 +1,70 @@
-# Truth Wave ― 真理の波｜AI×Webで業務を“ラクにする”ポートフォリオ
+# Truth Wave ― 真理の波
 
-## 🧭 このサイトについて
+## 概要
 
-![デモ動画](https://github.com/TomoAIDayori/TomoAIDayori.github.io/blob/main/%E8%B3%87%E6%96%99/%E3%83%87%E3%83%A2%E5%8B%95%E7%94%BB.gif)
+**Truth Wave** は、「真理は、波となって広がる」という信念のもと、本質からはじまるAI×UIの開発を行う個人ブランドです。
 
-このWebページは、**中小企業やフリーランスの業務を「AI × Webアプリ」で効率化する開発パートナー**としての実績・サービス・思想を紹介するポートフォリオサイトです。
+このWebページでは、以下の内容を紹介しています：
 
-[👉 サイトを開く](https://truth-wave-github-io.vercel.app/)
+- ブランドの哲学（真理とは何か、設計思想など）
+- 実際に開発したプロジェクト（波紋の記録）
+- 所有する資格と技術スタック（信頼という土壌）
+- 提案資料・構造図のダウンロードリンク
+- コンタクト・フィードバックリンク
+
+## デモページ
+
+👉 [https://truth-wave-github-io.vercel.app/](https://truth-wave-github-io.vercel.app/)
+
+## ディレクトリ構成
+
+```
+
+/
+├── index.html          # メインWebページ（日本語版）
+├── style.css           # ページ全体のスタイル定義
+└── English/
+└── index.html      # 英語版のWebページ（※別途用意）
+
+````
+
+## 主な使用技術
+
+- HTML5 / CSS3（Vanilla）
+- モバイル対応（レスポンシブ対応）
+- Vercelによるデプロイ
+- GitHubによるバージョン管理
+
+## リンク集（プロジェクト例）
+
+### ✅ バフェット＆グレアムGPTs
+
+- 商品ページ: [Coconala 商品リンク](https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs)
+- GitHubリポジトリ: [Buffett-Graham-GPTs](https://github.com/truthwave/Buffett-Graham-GPTs)
+
+### ✅ メール効率化GPT
+
+- 商品ページ: [Coconala 商品リンク](https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9)
+- GitHubリポジトリ: [Mail Efficiency GPTs](https://github.com/truthwave/mail-efficiency-gpts)
+
+## 資格・スタック
+
+- Microsoft 認定：「生成AIによる生産性向上」修了
+- PMI 認定：「生成AI時代の倫理」修了
+- 使用技術：Next.js / Tailwind CSS / Supabase / OpenAI API / Vercel
+
+## フィードバック
+
+* 無料診断・提案フォーム: [Google Forms](https://docs.google.com/forms/d/1r7uBtmvtOOIvulyOCVvk0Qt0KayR9D6uQDYwsKX1pCo/viewform)
+* 感想・フィードバックフォーム: [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSefO9WQEQOMclfzoi7WNjl75KvJwqH9Ku17lMqb1FxlHE2hjg/viewform?usp=header)
+
+## ライセンス
+
+このプロジェクトは [MIT License](LICENSE) のもと提供されています。
+
+```
 
 ---
 
-## 🛠 主な構成技術
-
-- HTML + CSS（モバイル対応・軽量構成）
-- GitHub Pages によるホスティング
-- OGタグ / SEO 最適化対応済
-
----
-
-## ✨ 掲載内容の概要
-
-| セクション | 内容 |
-|------------|------|
-| 💁 自己紹介 | 開発姿勢と価値提供のスタンス |
-| 📜 認定・スキル証明 | Microsoft生成AI認定（修了証付き） |
-| 💻 技術スタック | 使用フレームワーク・ツール一覧 |
-| 🚀 開発実績 | 業務効率化や支援ツールの具体例（画像・リンク付き） |
-| 🧠 無料診断 | フォームリンクで診断・提案を受け付け |
-| 💬 フィードバック | 来訪者からの意見・改善案を募集 |
-
----
-
-## 🧩 強みと差別化ポイント
-
-- Microsoft 認定「生成AIによる生産性の向上」コース修了
-  - ➡️[ 学習記録のGitHubリポジトリを見る](https://github.com/TomoAIDayori/ai-productivity-cert-practical-output)
-- 実務ベースで開発した**AI×業務ツール**5種掲載
-- 誰でも使いやすい**無料診断フォーム**付き
-- 軽量設計 + スマホ対応（1ファイルCSS）
-
----
-
-## 🚀 今後の展望
-
-- Webアプリ版ポートフォリオへの拡張
-- 開発プロジェクトのブログ連携
-- 多言語対応（日本語/英語）
-
----
-
-## 📝 ライセンス
-
-このリポジトリのコードは MIT ライセンスのもとで公開されています。  
-※掲載画像・認定証等の再利用はご遠慮ください。
-
----
-
-> 「人と向き合う時間を、AIとWebの力で取り戻す。」  
->  ― そんな思想に共感してもらえる方と、つながりたい。
-
+必要に応じて「英語版ページへの導線」「ココナラでの販売方針」「READMEの英訳」なども追加可能です。希望があれば対応します。
+```
