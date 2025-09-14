@@ -1,60 +1,68 @@
-# Truth Wave｜Portfolio of AI×Web Solutions to Make Work Easier
+# Truth Wave ― The Wave of Truth
 
-## 🧭 About This Site
+## Overview
 
-![Demo Video](https://github.com/TomoAIDayori/TomoAIDayori.github.io/blob/main/English/Materials/Demo%20Movie.gif)
+**Truth Wave** is a personal brand developing AI×UI from its essence, founded on the belief that “truth spreads like a wave.”
 
-This webpage is a portfolio site introducing our track record, services, and philosophy as a **development partner that streamlines the operations of small and medium-sized businesses and freelancers using “AI × Web Apps”.**
+This webpage introduces the following:
 
-[👉 Open Site](https://tomoAIdayori.github.io/)
+- Brand philosophy (What is truth? Design principles, etc.)
+- Projects actually developed (Records of ripples)
+- Qualifications and technology stack (The Soil of Trust)
+- Download links for proposal materials and architecture diagrams
+- Contact and feedback links
 
----
+## Demo Page
 
-## 🛠 Primary Technologies Used
+👉 [https://truth-wave-github-io.vercel.app/](https://truth-wave-github-io.vercel.app/)
 
-- HTML + CSS (Mobile-responsive, lightweight structure)
-- Hosted via GitHub Pages
-- Optimized for OG tags / SEO
+## Directory Structure
 
----
+```
 
-## ✨ Overview of Content
+/
+├── index.html          # Main web page (Japanese version)
+├── style.css           # Global page style definitions
+└── English/
+└── index.html      # English web page (※Prepared separately)
 
-| Section | Content |
-|------------|------|
-| 💁 About Me | Development philosophy and value proposition |
-| 📜 Certifications & Skills | Microsoft Generative AI Certification (with completion certificate) |
-| 💻 Tech Stack | List of frameworks and tools used |
-| 🚀 Development Portfolio | Examples of productivity tools and support solutions (with images/links) |
-| 🧠 Free Consultation | Accepting requests for assessments and proposals via form link |
-| 💬 Feedback | Soliciting visitor opinions and improvement suggestions |
+````
 
----
+## Main Technologies Used
 
-## 🧩 Strengths and Differentiators
+- HTML5 / CSS3 (Vanilla)
+- Mobile-responsive design
+- Deployment via Vercel
+- Version control via GitHub
 
-- Microsoft Certified “Boosting Productivity with Generative AI” Course Completion
-  - ➡️[ View GitHub Repository of Learning Records](https://github.com/TomoAIDayori/ai-productivity-cert-practical-output)
-- Features 5 **AI×Business Tools** developed based on real-world practice
-- Includes an **easy-to-use free diagnostic form**
-- Lightweight design + Mobile-responsive (1 CSS file)
+## Links (Project Examples)
 
----
+### ✅ Buffett & Graham GPTs
 
-## 🚀 Future Plans
+- Product Page: [Coconala Product Link](https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs)
+- GitHub Repository: [Buffett-Graham-GPTs](https://github.com/truthwave/Buffett-Graham-GPTs)
 
-- Expansion to a web app version portfolio
-- Blog integration for development projects
-- Multilingual support (Japanese/English)
+### ✅ Email Efficiency GPT
 
----
+- Product Page: [Coconala Product Link](https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9)
+- GitHub Repository: [Mail Efficiency GPTs](https://github.com/truthwave/mail-efficiency-gpts)
 
-## 📝 License
+## Certifications & Stack
 
-The code in this repository is released under the MIT License.  
-※Please refrain from reusing images, certificates, or other materials featured here.
+- Microsoft Certified: “Generative AI for Productivity” Completed
+- PMI Certified: “Ethics in the Generative AI Era” Completed
+- Technologies Used: Next.js / Tailwind CSS / Supabase / OpenAI API / Vercel
 
----
+## Feedback
 
-> “Reclaim time for human connection through the power of AI and the web.”  
->  ― We want to connect with those who resonate with this philosophy.
+* Free Diagnosis & Proposal Form: [Google Forms](https://docs.google.com/forms/d/1r7uBtmvtOOIvulyOCVvk0Qt0KayR9D6uQDYwsKX1pCo/viewform)
+* Feedback/Impressions Form: [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSefO9WQEQOMclfzoi7WNjl75KvJwqH9Ku17lMqb1FxlHE2hjg/viewform?usp=header)
+
+## License
+
+This project is provided under the [MIT License](LICENSE).
+
+
+
+
+Translated with DeepL.com (free version)
