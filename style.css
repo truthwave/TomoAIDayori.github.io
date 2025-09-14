@@ -1,47 +1,68 @@
-/* --- 全体構造・リセット --- */
+/* Truth Wave 共通スタイル */
+
 :root {
-  --background: #0f0f0f;
-  --text: #e5e5e5;
-  --accent-1: #89f0e2;
-  --accent-2: #f3a9f0;
+  --bg-dark: #0a0e1a;
+  --text-light: #f0f4f8;
+  --accent: #a78bfa; /* 紫系 */
+  --accent-2: #facc15; /* ゴールド系 */
+  --deep-blue: #0c1a3e;
   --font-main: 'Helvetica Neue', sans-serif;
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--font-main);
-  background: var(--background);
-  color: var(--text);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
   line-height: 1.6;
-  position: relative;
 }
 
-/* --- 言語切り替えボタン --- */
-.language-switcher {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
+h1, h2, h3 {
+  color: var(--accent);
+  font-weight: 600;
 }
 
-.lang-btn {
-  background: var(--accent-1);
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
+a {
+  color: var(--accent-2);
   text-decoration: none;
-  transition: background 0.3s ease;
 }
 
-.lang-btn:hover,
-.lang-btn:focus {
-  background: var(--accent-2);
-  outline: 2px solid var(--accent-2);
-  outline-offset: 2px;
+a:hover {
+  text-decoration: underline;
 }
 
-/* --- 波紋アニメーション --- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* ヒーローセクション */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 10rem;
+  position: relative;
+  background: radial-gradient(circle at center, #111827, var(--deep-blue));
+  overflow: hidden;
+}
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-sub {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
 .ripple-bg::before {
   content: '';
   position: absolute;
@@ -54,7 +75,6 @@ body {
   border-radius: 50%;
   animation: ripple 12s infinite linear;
   z-index: 0;
-  will-change: transform;
 }
 
 @keyframes ripple {
@@ -68,52 +88,110 @@ body {
   }
 }
 
-/* --- 外部リンク整形 --- */
-.external-links {
-  margin: 1rem 0;
-  line-height: 1.4;
+/* セクション共通 */
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.5rem;
 }
 
-.external-links a {
+/* リスト（思想ポイント） */
+.philosophy-points {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.philosophy-points li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.philosophy-points li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent-2);
+}
+
+/* プロジェクト */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-summary {
+  margin-top: 0.5rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+/* CTA */
+.cta {
   display: inline-block;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent-1);
-  text-decoration: underline;
-  font-size: 0.9rem;
+  background: var(--accent);
+  color: #0f172a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.cta:hover {
+  background: var(--accent-2);
+  color: #0a0e1a;
+}
+.cta--lg {
+  font-size: 1.1rem;
 }
 
-/* --- フッター、引用など --- */
-blockquote {
+/* フッター */
+.footer {
+  background: #111827;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.footer h2 {
+  font-size: 1.4rem;
+}
+.footer .contact-links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer blockquote {
   font-size: 1.2rem;
   color: var(--accent-2);
+  margin-top: 2rem;
   text-align: center;
-  margin: 2rem auto;
-  max-width: 600px;
   line-height: 1.8;
 }
 
-/* --- アコーディオン展開 --- */
-.accordion-content {
-  display: none;
-  margin-top: 1rem;
-}
-
-.accordion-toggle.open + .accordion-content {
-  display: block;
-}
-
-/* --- レスポンシブ対応 --- */
-@media (max-width: 600px) {
-  .language-switcher {
-    top: 0.5rem;
-    right: 0.5rem;
+/* レスポンシブ */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
   }
-  .lang-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
+  .hero-sub {
+    font-size: 1.4rem;
   }
-  blockquote {
+  .section {
+    padding: 6rem 2rem;
+  }
+  .project-summary {
     font-size: 1rem;
+  }
+  .cta--lg {
+    font-size: 1.25rem;
+  }
+  .footer blockquote {
+    font-size: 1.4rem;
   }
 }
