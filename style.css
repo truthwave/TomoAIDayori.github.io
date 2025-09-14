@@ -1,88 +1,197 @@
-  --primary-1: #3f51b5;  /* 青 */
-  background: var(--hero-bg);
-  color: var(--hero-text);
-  padding: 6rem 1rem 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+/* Truth Wave 共通スタイル */
+
+:root {
+  --bg-dark: #0a0e1a;
+  --text-light: #f0f4f8;
+  --accent: #a78bfa; /* 紫系 */
+  --accent-2: #facc15; /* ゴールド系 */
+  --deep-blue: #0c1a3e;
+  --font-main: 'Helvetica Neue', sans-serif;
 }
 
-.hero::before {
-  content: "";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skip-link {
   position: absolute;
-  top: -30%;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* ヒーローセクション */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 10rem;
+  position: relative;
+  background: radial-gradient(circle at center, #111827, var(--deep-blue));
+  overflow: hidden;
+}
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-sub {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.ripple-bg::before {
+  content: '';
+  position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 150vw;
-  height: 150vw;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
-  animation: ripple 10s infinite linear;
+  transform: translate(-50%, -50%);
+  width: 200vw;
+  height: 200vw;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
   border-radius: 50%;
+  animation: ripple 12s infinite linear;
   z-index: 0;
 }
 
 @keyframes ripple {
-  from { transform: translateX(-50%) scale(1); opacity: 0.3; }
-  to { transform: translateX(-50%) scale(3); opacity: 0; }
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
 }
 
-.hero > * {
-  position: relative;
-  z-index: 1;
-  max-width: 900px;
-  margin-inline: auto;
-}
-
-.hero-title {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  color: var(--accent-1);
-  font-weight: 700;
-}
-
-.hero-sub {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: var(--hero-text);
-}
-
+/* セクション共通 */
 .section {
-  max-width: 900px;
-  margin: 0 auto;
   padding: 4rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
 .section h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: var(--accent-2);
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 0.5rem;
 }
 
-.footer {
-  background: var(--footer-bg);
-  color: var(--footer-text);
-  text-align: center;
-  padding: 3rem 1rem;
+/* リスト（思想ポイント） */
+.philosophy-points {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
 }
-
-.footer h2 {
-  font-size: 1.4rem;
+.philosophy-points li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  position: relative;
 }
-
-.footer blockquote {
-  margin-top: 2rem;
-  font-style: italic;
+.philosophy-points li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
   color: var(--accent-2);
 }
 
-.contact-links a {
-  margin: 0 1rem;
-  color: var(--accent-1);
-  text-decoration: none;
+/* プロジェクト */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-summary {
+  margin-top: 0.5rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: #cbd5e1;
 }
 
-.contact-links a:hover {
-  text-decoration: underline;
+/* CTA */
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #0f172a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.cta:hover {
+  background: var(--accent-2);
+  color: #0a0e1a;
+}
+.cta--lg {
+  font-size: 1.1rem;
+}
+
+/* フッター */
+.footer {
+  background: #111827;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.footer h2 {
+  font-size: 1.4rem;
+}
+.footer .contact-links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer blockquote {
+  font-size: 1.2rem;
+  color: var(--accent-2);
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* レスポンシブ */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-sub {
+    font-size: 1.4rem;
+  }
+  .section {
+    padding: 6rem 2rem;
+  }
+  .project-summary {
+    font-size: 1rem;
+  }
+  .cta--lg {
+    font-size: 1.25rem;
+  }
+  .footer blockquote {
+    font-size: 1.4rem;
+  }
 }
