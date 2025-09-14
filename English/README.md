@@ -14,7 +14,7 @@ This webpage introduces the following:
 
 ## Demo Page
 
-👉 [https://truth-wave-github-io.vercel.app/](https://truth-wave-github-io.vercel.app/)
+👉 [https://truth-wave-github-io.vercel.app/English/index.html](https://truth-wave-github-io.vercel.app/English/index.html)
 
 ## Directory Structure
 
@@ -40,12 +40,12 @@ This webpage introduces the following:
 ### ✅ Buffett & Graham GPTs
 
 - Product Page: [Coconala Product Link](https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs)
-- GitHub Repository: [Buffett-Graham-GPTs](https://github.com/truthwave/Buffett-Graham-GPTs)
+- GitHub Repository: [Buffett-Graham-GPTs](https://github.com/truthwave/Buffett-Graham-GPTs/tree/main/English)
 
 ### ✅ Email Efficiency GPT
 
 - Product Page: [Coconala Product Link](https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9)
-- GitHub Repository: [Mail Efficiency GPTs](https://github.com/truthwave/mail-efficiency-gpts)
+- GitHub Repository: [Mail Efficiency GPTs](https://github.com/truthwave/mail-efficiency-gpts/tree/main/English)
 
 ## Certifications & Stack
 
@@ -55,7 +55,7 @@ This webpage introduces the following:
 
 ## Feedback
 
-* Free Diagnosis & Proposal Form: [Google Forms](https://docs.google.com/forms/d/1r7uBtmvtOOIvulyOCVvk0Qt0KayR9D6uQDYwsKX1pCo/viewform)
+* Free Diagnosis & Proposal Form: [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSdZqlT1lHF6tNUYDIBoBPDHhdqT6lYpDl_Kl7N2QauxoJv3_g/viewform?usp=header)
 * Feedback/Impressions Form: [Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSefO9WQEQOMclfzoi7WNjl75KvJwqH9Ku17lMqb1FxlHE2hjg/viewform?usp=header)
 
 ## License
