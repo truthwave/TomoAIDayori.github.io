@@ -62,7 +62,4 @@ This webpage introduces the following:
 
 This project is provided under the [MIT License](LICENSE).
 
-
-
-
-Translated with DeepL.com (free version)
+[👉 See the actual product here](https://github.com/truthwave/Truth-Wave/blob/main/READMEen.md)
