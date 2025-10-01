@@ -4,94 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Truth Wave ― 真理の波</title>
-  <meta name="description" content="真理の波を起こす、AIとWebによる開発ブランド Truth Wave。" />
+  <meta name="description" content="AIとWeb技術で本質的な行動変容を設計する開発ブランド Truth Wave。仕組みの哲学と美学を融合し、実用性と継続性を備えたWeb・AIソリューションを提供します。">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Truth Wave ― 真理の波">
+  <meta property="og:description" content="AIとWeb技術で行動変容を設計するブランド。哲学×実装で成果を届ける。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/og/truth-wave.jpg"><!-- TODO: 実画像URLに差し替え -->
+  <meta property="og:site_name" content="Truth Wave">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://example.com/"><!-- TODO: 実URLに差し替え -->
+  <meta name="theme-color" content="#0a0e1a">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .ripple-bg::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 200vw;
-      height: 200vw;
-      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
-      border-radius: 50%;
-      animation: ripple 12s infinite linear;
-      z-index: 0;
-    }
 
-    @keyframes ripple {
-      0% {
-        transform: translate(-50%, -50%) scale(0.9);
-        opacity: 0.3;
-      }
-      100% {
-        transform: translate(-50%, -50%) scale(1.5);
-        opacity: 0;
-      }
-    }
-
-    .accordion-content {
-      display: none;
-      margin-top: 1rem;
-    }
-
-    .accordion-toggle.open + .accordion-content {
-      display: block;
-    }
-
-    blockquote {
-      font-size: 1.2rem;
-      color: var(--accent-2);
-      margin-top: 2rem;
-      text-align: center;
-      line-height: 1.8;
-    }
-
-    .external-links {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    .external-links a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: var(--accent-1);
-      text-decoration: underline;
-    }
-
-  </style>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3GW610HER3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3GW610HER3');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GW610HER3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3GW610HER3');
+  </script>
 </head>
 <body>
-      <nav class="language-switcher">
-  <a href="/English/index.html" class="lang-btn">English →</a>
-</nav>
+  <!-- 言語切替 -->
+  <nav class="language-switcher" aria-label="Language">
+    <a href="/English/index.html" class="lang-btn">English →</a>
+  </nav>
+
   <a class="skip-link" href="#main">本文へスキップ</a>
-  <header class="hero" role="banner">
-    <h1 class="hero-title">真理は、波となって広がる。</h1>
-    <p class="hero-sub">本質からはじまる仕組みが、人の行動を変える。</p>
-    <div class="ripple-bg"></div>
+
+  <!-- グローバルナビ（固定） -->
+  <nav class="global-nav" aria-label="Primary">
+    <a href="#philosophy">真理とは何か</a>
+    <a href="#projects">波紋の記録</a>
+    <a href="#next-wave">次の波へ</a>
+  </nav>
+
+  <header class="hero" role="banner" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="hero-title">真理は、波となって広がる。</h1>
+    <p class="hero-sub">AIとWeb技術で、本質的な行動変容をもたらす仕組みを設計する。</p>
+    <div class="ripple-bg" aria-hidden="true"></div>
+
+    <!-- ヒーロー直下CTA -->
+    <div class="hero-cta">
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc5FF12P7DN9NJrBsdVplYTinnIz4PvHbuHCaWYLyeA2DsTKg/viewform?usp=dialog"
+        class="cta cta--lg"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="無料で診断を受ける（新しいタブで開きます）"
+      >無料で診断を受ける →</a>
+      <div class="cta-notes" aria-hidden="true">3分｜無料｜匿名OK</div>
+    </div>
   </header>
+
   <main id="main" role="main">
-    <section class="section philosophy">
+    <section id="philosophy" class="section philosophy">
       <h2>真理とは何か</h2>
       <p>Truth Waveが信じる真理とは、<strong>飾りをすべて取り払ったあとに残る「本質」</strong>です。</p>
       <p>技術的な透明性。情報の誠実さ。課題の核心を突く視点。<br>私たちは、「AIをどう見せるか」よりも、「本当に役立つ仕組みは何か」を問い続けます。</p>
       <p>美しいデザインも、高度な技術も、それだけでは“真理”には届かない。<br>本当に届けたいのは、“使う人の行動が変わる”瞬間です。</p>
+
+      <!-- 体感：余白／直感／揺らぎ -->
+      <div class="concepts" aria-label="デザインの三原則">
+        <div class="concept">
+          <div class="icon icon--space" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="余白">
+              <rect x="6" y="6" width="28" height="28" rx="6" fill="none" stroke="currentColor" stroke-width="2"></rect>
+              <rect x="12" y="12" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"></rect>
+            </svg>
+          </div>
+          <div class="concept-label">余白</div>
+          <div class="concept-hint" aria-hidden="true">迷わない</div>
+        </div>
+        <div class="concept">
+          <div class="icon icon--intuition" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="直感">
+              <circle cx="20" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              <path d="M20 6 L20 2 M34 20 L38 20 M20 34 L20 38 M2 20 L6 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M14 20 L20 14 L26 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="concept-label">直感</div>
+          <div class="concept-hint" aria-hidden="true">説明不要</div>
+        </div>
+        <div class="concept">
+          <div class="icon icon--ripple" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="揺らぎ">
+              <path class="wave-path" d="M2,20 C8,10 14,30 20,20 C26,10 32,30 38,20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <div class="concept-label">揺らぎ</div>
+          <div class="concept-hint" aria-hidden="true">自然な動き</div>
+        </div>
+      </div>
     </section>
+
     <section id="projects" class="section">
       <h2>波紋の記録</h2>
       <p>本質に向き合い、仕組みを設計すると──<br>使う人の行動が変わり、その変化が波のように広がっていく。</p>
+
       <div class="projects">
         <article class="project">
           <h3>バフェット＆グレアムGPTs</h3>
@@ -100,11 +112,39 @@
             <strong>課題：</strong>情報収集と分析の時間がかかりすぎる<br>
             <strong>変化：</strong>著名投資家の視点を再現した対話型エージェントで投資の軸が明確に
           </p>
+
+          <!-- Before/After マイクロギャラリー（ライトボックス対応） -->
+          <div class="ba-grid" aria-label="Before / After">
+            <figure class="ba-item">
+              <a class="ba-link" href="#bg-before">
+                <img src="assets/buffett-before.jpg" alt="返信時間が長い：分散メモと非構造な判断" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>Before</figcaption>
+              </a>
+            </figure>
+            <figure class="ba-item">
+              <a class="ba-link" href="#bg-after">
+                <img src="assets/buffett-after.jpg" alt="返信時間を50%短縮：規律あるプロンプトと判断フロー" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>After</figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <!-- Lightbox targets -->
+          <div id="bg-before" class="lb" role="dialog" aria-modal="true" aria-label="Before画像">
+            <a class="lb-close" href="#!"></a>
+            <img src="assets/buffett-before.jpg" alt="Before拡大">
+          </div>
+          <div id="bg-after" class="lb" role="dialog" aria-modal="true" aria-label="After画像">
+            <a class="lb-close" href="#!"></a>
+            <img src="assets/buffett-after.jpg" alt="After拡大">
+          </div>
+
           <div class="external-links">
-            <a href="https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs" target="_blank">▶ 商品ページを見る</a>
-            <a href="https://github.com/truthwave/Buffett-Graham-GPTs" target="_blank">▶ GitHubで見る</a>
+            <a href="https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs" target="_blank" rel="noopener noreferrer">▶ 商品ページを見る</a>
+            <a href="https://github.com/truthwave/Buffett-Graham-GPTs" target="_blank" rel="noopener noreferrer">▶ GitHubで見る</a>
           </div>
         </article>
+
         <article class="project">
           <h3>メール効率化GPT</h3>
           <p class="project-summary">
@@ -112,13 +152,41 @@
             <strong>課題：</strong>定型文返信や分類に時間がかかっていた<br>
             <strong>変化：</strong>GPTによる自動化で、返信時間とストレスが大幅に削減
           </p>
+
+          <!-- Before/After マイクロギャラリー（ライトボックス対応） -->
+          <div class="ba-grid" aria-label="Before / After">
+            <figure class="ba-item">
+              <a class="ba-link" href="#mail-before">
+                <img src="assets/mail-before.jpg" alt="手作業で肥大化した受信箱：返信遅延" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>Before</figcaption>
+              </a>
+            </figure>
+            <figure class="ba-item">
+              <a class="ba-link" href="#mail-after">
+                <img src="assets/mail-after.jpg" alt="自動仕分けとテンプレ返信で応答時間を半減" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>After</figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <!-- Lightbox targets -->
+          <div id="mail-before" class="lb" role="dialog" aria-modal="true" aria-label="Before画像">
+            <a class="lb-close" href="#!"></a>
+            <img src="assets/mail-before.jpg" alt="Before拡大">
+          </div>
+          <div id="mail-after" class="lb" role="dialog" aria-modal="true" aria-label="After画像">
+            <a class="lb-close" href="#!"></a>
+            <img src="assets/mail-after.jpg" alt="After拡大">
+          </div>
+
           <div class="external-links">
-            <a href="https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9" target="_blank">▶ 商品ページを見る</a>
-            <a href="https://github.com/truthwave/mail-efficiency-gpts" target="_blank">▶ GitHubで見る</a>
+            <a href="https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9" target="_blank" rel="noopener noreferrer">▶ 商品ページを見る</a>
+            <a href="https://github.com/truthwave/mail-efficiency-gpts" target="_blank" rel="noopener noreferrer">▶ GitHubで見る</a>
           </div>
         </article>
       </div>
     </section>
+
     <section class="section">
       <h2>静けさの設計</h2>
       <p>Truth WaveのUI設計における信条は、<strong>「静けさは選択肢を削ることから始まる」</strong>ということ。</p>
@@ -130,45 +198,30 @@
       </ul>
       <p>ユーザーに届けたいのは、情報ではありません。<br>「雑音のない空間で、“本当に必要なこと”に集中できる体験」です。</p>
     </section>
-    <section class="section">
-      <h2>信頼という土壌</h2>
-      <button class="accordion-toggle">▶ 資格・技術スタックを見る</button>
-      <div class="accordion-content">
-        <ul class="philosophy-points">
-          <li><strong>Microsoft 認定：</strong>「生成AIによる生産性向上」修了（実装＋活用力）
-            <div class="external-links">
-              <a href="https://github.com/user-attachments/assets/f3350dbc-2491-4946-af0b-9e0959b85ba2" target="_blank">修了証を見る</a>
-              <a href="https://github.com/truthwave/ai-productivity-cert-practical-output" target="_blank">GitHubを見る</a>
-            </div>
-          </li>
-          <li><strong>PMI 認定：</strong>「生成AI時代の倫理」修了（原則と未来視点）
-            <div class="external-links">
-              <a href="https://github.com/user-attachments/assets/93110864-c74b-4615-994d-a08397d5c0df" target="_blank">修了証を見る</a>
-              <a href="https://github.com/truthwave/ethical-genai-practices" target="_blank">GitHubを見る</a>
-            </div>
-          </li>
-          <li><strong>スタック：</strong> Next.js, Tailwind CSS, Supabase, OpenAI API, Vercel…</li>
-        </ul>
-        <p>高度なAIも、分かりやすいUIも。<br>必要なのは“実装力”だけでなく、“それを使う人の視点”です。</p>
-        <div class="external-links">
-          <a href="https://drive.google.com/file/d/14fOs6U0ZgDFUEVv0tKlUuscL3F-zQWq0/view?usp=sharing" target="_blank">📒 提案資料を見る</a>
-          <a href="https://drive.google.com/file/d/187DQkRy4OxJmUt4ejRAEzxvL9QiNmtoY/view?usp=sharing" target="_blank">📊 提案の流れ（構造図）を見る</a>
-        </div>
-      </div>
-    </section>
+
     <section class="section" id="next-wave">
       <h2>次の波へ</h2>
       <p>あなたがもし、「これだ」と感じたなら──<br>次に動き出すのは、こちらの番です。</p>
       <p>Truth Waveでは、共鳴した方とのみプロジェクトを進めています。<br>小さな相談、アイデアの断片でも構いません。<br>ぜひ、あなたの“本質”を聞かせてください。</p>
+
       <div class="cta-inline" style="margin-top: 2rem;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5FF12P7DN9NJrBsdVplYTinnIz4PvHbuHCaWYLyeA2DsTKg/viewform?usp=dialog" class="cta cta--lg" target="_blank" rel="noopener noreferrer">無料で診断を受ける →</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5FF12P7DN9NJrBsdVplYTinnIz4PvHbuHCaWYLyeA2DsTKg/viewform?usp=dialog"
+           class="cta cta--lg"
+           target="_blank" rel="noopener noreferrer">
+          無料で診断を受ける →
+        </a>
       </div>
       <div class="cta-inline" style="margin-top: 1rem;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdco35yXOvbshmbyOUvZB4LdcZF-uUE3Twc-J9a6Y3yn3v1zg/viewform?usp=header" class="cta cta--secondary" target="_blank" rel="noopener noreferrer">感想・フィードバックを送る →</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdco35yXOvbshmbyOUvZB4LdcZF-uUE3Twc-J9a6Y3yn3v1zg/viewform?usp=header"
+           class="cta cta--secondary"
+           target="_blank" rel="noopener noreferrer">
+          無料で診断を受ける →
+        </a>
       </div>
       <p style="font-size: 0.9rem; margin-top: 1rem;">※診断は約3分。匿名でもOKです。<br>あなたの言葉が、次の“波”になります。</p>
     </section>
   </main>
+
   <footer class="footer">
     <h2>Contact</h2>
     <p>波紋を共に起こしたい方は、こちらから。</p>
@@ -178,11 +231,34 @@
     </div>
     <blockquote>“届けたいのは、仕組みじゃない。届くという体験そのものだ。”</blockquote>
   </footer>
+
+  <!-- 追従CTA（モバイルでは非表示）-->
+  <div class="sticky-cta" role="complementary" aria-label="常時表示の行動ボタン">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc5FF12P7DN9NJrBsdVplYTinnIz4PvHbuHCaWYLyeA2DsTKg/viewform?usp=dialog"
+      class="cta"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="無料で診断を受ける（新しいタブで開きます）"
+    >無料で診断を受ける →</a>
+  </div>
+
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.querySelector('.accordion-toggle');
-      toggle.addEventListener('click', () => {
-        toggle.classList.toggle('open');
+    // ヒーロー通過後は波紋を止め、静けさを優先
+    document.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero');
+      if (!hero) return;
+      const passed = window.scrollY > hero.offsetHeight * 0.6;
+      document.body.classList.toggle('ripple-paused', passed);
+    });
+
+    // Lightbox: Escで閉じる／背景クリックで閉じる（:target補完）
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') location.hash = '!';
+    });
+    document.querySelectorAll('.lb').forEach(d => {
+      d.addEventListener('click', (e) => {
+        if (e.target === d) location.hash = '!';
       });
     });
   </script>
