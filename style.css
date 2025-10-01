@@ -1,4 +1,4 @@
-/* Truth Wave 共通スタイル（v5：行動最短＋証拠の強化） */
+/* Truth Wave 共通スタイル（v4：行動優先＋静けさの節度） */
 :root {
   --bg-dark: #0a0e1a;
   --text-light: #f0f4f8;
@@ -53,7 +53,7 @@ section { scroll-margin-top: 72px; }
 /* ヒーロー（余白を詰めてCTAを視界内に） */
 .hero {
   text-align: center;
-  padding: calc(6rem + 56px) 1rem 6rem;
+  padding: calc(6rem + 56px) 1rem 6rem; /* 10rem → 6rem */
   position: relative;
   background: radial-gradient(circle at center, #111827, var(--deep-blue));
   overflow: hidden;
@@ -119,7 +119,7 @@ body.ripple-paused .ripple-bg::before { animation: none !important; }
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.02);
 }
-.ba-item img { width: 100%; height: auto; display: block; transition: transform .25s ease; aspect-ratio: 16 / 10; object-fit: cover; }
+.ba-item img { width: 100%; height: auto; display: block; transition: transform .25s ease; }
 .ba-item:hover img { transform: scale(1.03); }
 .ba-item figcaption {
   position: absolute; left: .5rem; bottom: .4rem; padding: .2rem .5rem;
@@ -132,6 +132,19 @@ body.ripple-paused .ripple-bg::before { animation: none !important; }
 /* 外部リンク（単一管理） */
 .external-links { margin-top: 0.5rem; font-size: 0.9rem; }
 .external-links a { display: inline-block; margin-right: 1rem; color: var(--accent-1); text-decoration: underline; }
+
+/* アコーディオン */
+.accordion-toggle {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .6rem 1rem; border-radius: 9999px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-light); border: 1px solid rgba(255,255,255,0.12);
+  cursor: pointer; transition: background .2s ease, transform .2s ease, border-color .2s ease;
+}
+.accordion-toggle:hover { background: rgba(255,255,255,0.10); transform: translateY(-1px); border-color: rgba(255,255,255,0.2); }
+.accordion-toggle.open { background: rgba(250,204,21,0.12); border-color: var(--accent-2); }
+.accordion-content { display: none; margin-top: 1rem; }
+.accordion-toggle.open + .accordion-content { display: block; }
 
 /* CTA */
 .cta {
@@ -174,7 +187,9 @@ body.ripple-paused .ripple-bg::before { animation: none !important; }
 .lb:target { display:block; }
 .lb img { max-width:92vw; max-height:86vh; position:absolute; inset:0; margin:auto; box-shadow: 0 10px 40px rgba(0,0,0,.5); border-radius: 12px; }
 .lb-close { position:absolute; inset:0; display:block; }
-.lb-close::after { content:'×'; position:absolute; top:1rem; right:1rem; font-size:2rem; line-height:1; color:#fff; opacity:.85; }
+.lb-close::after {
+  content:'×'; position:absolute; top:1rem; right:1rem; font-size:2rem; line-height:1; color:#fff; opacity:.85;
+}
 
 /* 動きの配慮：動きを必要な人にだけ */
 @media (prefers-reduced-motion: reduce) {
@@ -193,3 +208,32 @@ body.ripple-paused .ripple-bg::before { animation: none !important; }
   .cta--lg { font-size: 1.25rem; }
   .footer blockquote { font-size: 1.4rem; }
 }
+
+/* --- Trust section & Accordion --- */
+.accordion-toggle{
+  display:inline-block;
+  margin:.75rem 0 1rem;
+  padding:.5rem .75rem;
+  border:1px solid rgba(148,163,184,.35);
+  border-radius:.5rem;
+  background:transparent;
+  color:#94A3B8;
+  cursor:pointer;
+  transition:background .2s ease, border-color .2s ease, color .2s ease;
+}
+.accordion-toggle:hover,
+.accordion-toggle.open{
+  background:rgba(148,163,184,.08);
+  border-color:rgba(148,163,184,.55);
+  color:#cdd7e3;
+}
+.accordion-content{ margin-top:.5rem; }
+.trust-list{ list-style: none; padding-left: 0; }
+.trust-list li{ margin:.5rem 0 1rem; }
+.trust-list strong{ color:#cdd7e3; }
+.trust-links a{ color:#FACC15; text-decoration:none; }
+.trust-links a:hover{ text-decoration:underline; }
+/* External link row */
+.external-links{ display:flex; gap:1rem; margin-top: .5rem; flex-wrap:wrap; }
+.external-links a{ text-decoration:none; border-bottom:1px solid rgba(148,163,184,.35); padding-bottom:2px; }
+.external-links a:hover{ border-color:rgba(148,163,184,.65); }
