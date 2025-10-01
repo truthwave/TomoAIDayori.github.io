@@ -237,3 +237,22 @@ body.ripple-paused .ripple-bg::before { animation: none !important; }
 .external-links{ display:flex; gap:1rem; margin-top: .5rem; flex-wrap:wrap; }
 .external-links a{ text-decoration:none; border-bottom:1px solid rgba(148,163,184,.35); padding-bottom:2px; }
 .external-links a:hover{ border-color:rgba(148,163,184,.65); }
+
+<script>
+  document.querySelectorAll('.accordion-toggle').forEach((btn)=>{
+    const panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if(!panel) return;
+    // 初期は閉
+    btn.setAttribute('aria-expanded','false');
+    panel.setAttribute('hidden','');
+    // クリックで開閉
+    btn.addEventListener('click', ()=>{
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if(open){ panel.setAttribute('hidden',''); }
+      else{ panel.removeAttribute('hidden'); }
+      // 既存の .open スタイルを使いたい場合は次も
+      btn.classList.toggle('open', !open);
+    });
+  });
+</script>
