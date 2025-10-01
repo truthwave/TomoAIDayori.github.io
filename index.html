@@ -289,5 +289,24 @@
       });
     });
   </script>
+  <script>
+  document.querySelectorAll('.accordion-toggle').forEach((btn)=>{
+    const panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if(!panel) return;
+    // 初期は閉
+    btn.setAttribute('aria-expanded','false');
+    panel.setAttribute('hidden','');
+    // クリックで開閉
+    btn.addEventListener('click', ()=>{
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if(open){ panel.setAttribute('hidden',''); }
+      else{ panel.removeAttribute('hidden'); }
+      // 既存の .open スタイルを使いたい場合は次も
+      btn.classList.toggle('open', !open);
+    });
+  });
+</script>
+
 </body>
 </html>
