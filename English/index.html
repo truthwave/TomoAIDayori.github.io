@@ -2,98 +2,211 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Truth Wave ― Ripples of Insight</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Truth Wave — Ripples of Insight</title>
+  <meta name="description" content="Truth Wave designs AI × Web systems that drive meaningful behavior change. Philosophy fused with execution for results that last.">
+  <meta name="theme-color" content="#0a0e1a">
   <link rel="stylesheet" href="../style.css" />
   <style>
-    .accordion-content {
-      display: none;
-      margin-top: 1rem;
-    }
-    .accordion-toggle.open + .accordion-content {
-      display: block;
-    }
-    .external-links {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-    .external-links a {
-      display: inline-block;
-      margin-right: 1rem;
-      color: var(--accent-1);
-      text-decoration: underline;
-    }
+    .language-switcher{ position:fixed; top:16px; right:16px; z-index:9999; }
+    .lang-btn{ display:inline-block; padding:6px 10px; font-size:13px; color:#0A0E1A; background:#FACC15; border-radius:9999px; text-decoration:none; border:1px solid rgba(0,0,0,.15); }
+    .lang-btn:hover{ filter:brightness(.95); }
+    @media (max-width:640px){ .sticky-cta{ display:none; } }
+    .accordion-content[hidden]{ display:none; }
+    .accordion-toggle::before{ display:inline-block; width:1em; margin-right:.25rem; }
+    .accordion-toggle[aria-expanded="false"]::before{ content:"▶"; }
+    .accordion-toggle[aria-expanded="true"]::before { content:"▼"; }
   </style>
 </head>
 <body>
-      <nav class="language-switcher">
-    <a href="/index.html" class="lang-btn">日本語 →</a>
+  <nav class="language-switcher" aria-label="Language">
+    <a href="../index.html" class="lang-btn" aria-label="Go to Japanese page">日本語 →</a>
   </nav>
-  <header class="hero">
-    <h1 class="hero-title">Truth expands like ripples.</h1>
-    <p class="hero-sub">When essence shapes systems, it triggers action.</p>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="global-nav" aria-label="Primary">
+    <a href="#philosophy">What is Truth?</a>
+    <a href="#projects">Ripples</a>
+    <a href="#trust">Trust</a>
+    <a href="#next-wave">Next Wave</a>
+  </nav>
+
+  <header class="hero" role="banner" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="hero-title">Truth expands like ripples.</h1>
+    <p class="hero-sub">We design AI & Web systems that trigger essential behavior change.</p>
+    <div class="ripple-bg" aria-hidden="true"></div>
+
+    <div class="hero-cta">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZqlT1lHF6tNUYDIBoBPDHhdqT6lYpDl_Kl7N2QauxoJv3_g/viewform?usp=dialog"
+         class="cta cta--lg" target="_blank" rel="noopener">Get a free assessment →</a>
+      <div class="cta-notes" aria-hidden="true">3 min • Free • Anonymous OK</div>
+    </div>
   </header>
-  <main>
-    <section class="section philosophy">
+
+  <main id="main" role="main">
+    <section id="philosophy" class="section philosophy">
       <h2>What is Truth?</h2>
-      <p>Truth, to us, is the <strong>core that remains when all decoration is removed</strong>.</p>
-      <p>It’s technical transparency. Honest information. The root of the problem.<br>We ask not "How can we present AI beautifully?" but rather "What structure is truly useful?"</p>
-    </section>
-    <section class="section">
-      <h2>Our Ripples — Products that Resonate</h2>
-      <article class="project">
-        <h3>Buffett & Graham GPTs</h3>
-        <p><strong>For:</strong> Long-term value investors<br><strong>Challenge:</strong> Tedious research, unclear investment axis<br><strong>Change:</strong> Recreates legendary investors' logic for real-time decision clarity</p>
-        <div class="external-links">
-          <a href="https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs" target="_blank">▶ View product</a>
-          <a href="https://github.com/truthwave/Buffett-Graham-GPTs/tree/main/English" target="_blank">▶ GitHub</a>
+      <p>For Truth Wave, <strong>truth is the essence that remains after every decoration is removed</strong>.</p>
+      <p>Technical transparency. Honest information. A lens that hits the core problem.<br>We ask less “How do we showcase AI?” and more “What structure is truly useful?”.</p>
+      <p>Beauty and technology alone don’t reach truth.<br>What we deliver is the instant when <em>people actually change what they do</em>.</p>
+
+      <div class="concepts" aria-label="Three design principles">
+        <div class="concept">
+          <div class="icon icon--space" aria-hidden="true"></div>
+          <div class="concept-label">Whitespace</div>
+          <div class="concept-hint" aria-hidden="true">No detours</div>
         </div>
-      </article>
-      <article class="project">
-        <h3>Mail Efficiency GPTs</h3>
-        <p><strong>For:</strong> Busy professionals flooded with emails<br><strong>Challenge:</strong> Wasted time on repetitive replies<br><strong>Change:</strong> GPTs auto-reply, summarize, and prioritize messages</p>
-        <div class="external-links">
-          <a href="https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9" target="_blank">▶ View product</a>
-          <a href="https://github.com/truthwave/mail-efficiency-gpts/tree/main/English" target="_blank">▶ GitHub</a>
+        <div class="concept">
+          <div class="icon icon--intuition" aria-hidden="true"></div>
+          <div class="concept-label">Intuition</div>
+          <div class="concept-hint" aria-hidden="true">No explanation</div>
         </div>
-      </article>
-    </section>
-    <section class="section">
-      <h2>Quiet Design</h2>
-      <p>We believe <strong>quietness starts with reduction</strong>.</p>
-      <ul>
-        <li><strong>Whitespace:</strong> breathing room between information</li>
-        <li><strong>Intuition:</strong> interfaces speak without words</li>
-        <li><strong>Subtle motion:</strong> animation like ripples</li>
-      </ul>
-    </section>
-    <section class="section">
-      <h2>Grounded in Trust</h2>
-      <button class="accordion-toggle">▶ View Certifications & Tech Stack</button>
-      <div class="accordion-content">
-        <ul>
-          <li><strong>Microsoft Certified:</strong> "AI for Productivity" <br>
-            <a href="https://github.com/user-attachments/assets/f3350dbc-2491-4946-af0b-9e0959b85ba2" target="_blank">Certificate</a> / 
-            <a href="https://github.com/truthwave/ai-productivity-cert-practical-output/tree/main/English" target="_blank">GitHub</a></li>
-          <li><strong>PMI Certified:</strong> "Ethical AI Principles" <br>
-            <a href="https://github.com/user-attachments/assets/93110864-c74b-4615-994d-a08397d5c0df" target="_blank">Certificate</a> / 
-            <a href="https://github.com/truthwave/ethical-genai-practices/tree/main/English" target="_blank">GitHub</a></li>
-          <li><strong>Tech Stack:</strong> Next.js, Tailwind CSS, Supabase, OpenAI API, Vercel</li>
-        </ul>
-        <div class="external-links">
-          <a href="https://drive.google.com/file/d/1pc4m8KXk3ke-aLtMibzz-zgCiDFPjGgH/view?usp=sharing" target="_blank">🧾 Proposal Sample</a>
-          <a href="https://drive.google.com/file/d/1KNAuY0vCLjlczo19918mrhGLnTaymZXY/view?usp=sharing" target="_blank">🧭 Structure Diagram</a>
+        <div class="concept">
+          <div class="icon icon--ripple" aria-hidden="true"></div>
+          <div class="concept-label">Ripple</div>
+          <div class="concept-hint" aria-hidden="true">Natural motion</div>
         </div>
       </div>
     </section>
+
+    <section id="projects" class="section">
+      <h2>Ripples — Records of Change</h2>
+      <p>When we confront the essence and design the system, people change how they act — and that change spreads like waves.</p>
+
+      <div class="projects">
+        <article class="project">
+          <h3>Buffett & Graham GPTs</h3>
+          <p class="project-summary">
+            <strong>For:</strong> Long-term / value investors<br>
+            <strong>Challenge:</strong> Fragmented research, slow decisions<br>
+            <strong>Change:</strong> Dialogue agents that emulate legendary investors and clarify the decision axis
+          </p>
+
+          <div class="ba-grid" aria-label="Before / After">
+            <figure class="ba-item">
+              <a class="ba-link" href="#bg-before-en">
+                <img src="../assets/buffett-before.jpg" alt="Unstructured notes — slow, inconsistent decisions" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>Before</figcaption>
+              </a>
+            </figure>
+            <figure class="ba-item">
+              <a class="ba-link" href="#bg-after-en">
+                <img src="../assets/buffett-after.jpg" alt="Structured flow — faster, consistent decisions" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>After</figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <div id="bg-before-en" class="lb" role="dialog" aria-modal="true" aria-label="Before image">
+            <a class="lb-close" href="#!"></a>
+            <img src="../assets/buffett-before.jpg" alt="Before enlarged">
+          </div>
+          <div id="bg-after-en" class="lb" role="dialog" aria-modal="true" aria-label="After image">
+            <a class="lb-close" href="#!"></a>
+            <img src="../assets/buffett-after.jpg" alt="After enlarged">
+          </div>
+
+          <div class="external-links">
+            <a href="https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs" target="_blank" rel="noopener">▶ View product</a>
+            <a href="https://github.com/truthwave/Buffett-Graham-GPTs" target="_blank" rel="noopener">▶ GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Mail Efficiency GPT</h3>
+          <p class="project-summary">
+            <strong>For:</strong> People who handle heavy email traffic<br>
+            <strong>Challenge:</strong> Time lost to manual replies / sorting<br>
+            <strong>Change:</strong> Automation cuts response time and stress
+          </p>
+
+          <div class="ba-grid" aria-label="Before / After">
+            <figure class="ba-item">
+              <a class="ba-link" href="#mail-before-en">
+                <img src="../assets/mail-before.jpg" alt="Cluttered inbox, many unread" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>Before</figcaption>
+              </a>
+            </figure>
+            <figure class="ba-item">
+              <a class="ba-link" href="#mail-after-en">
+                <img src="../assets/mail-after.jpg" alt="Auto labels and templates halve response time" width="640" height="400" decoding="async" loading="lazy">
+                <figcaption>After</figcaption>
+              </a>
+            </figure>
+          </div>
+
+          <div id="mail-before-en" class="lb" role="dialog" aria-modal="true" aria-label="Before image">
+            <a class="lb-close" href="#!"></a>
+            <img src="../assets/mail-before.jpg" alt="Before enlarged">
+          </div>
+          <div id="mail-after-en" class="lb" role="dialog" aria-modal="true" aria-label="After image">
+            <a class="lb-close" href="#!"></a>
+            <img src="../assets/mail-after.jpg" alt="After enlarged">
+          </div>
+
+          <div class="external-links">
+            <a href="https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9" target="_blank" rel="noopener">▶ View product</a>
+            <a href="https://github.com/truthwave/mail-efficiency-gpts" target="_blank" rel="noopener">▶ GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="section">
+      <h2>Quiet Design</h2>
+      <p>Our principle: <strong>Quiet starts by removing choices</strong>.</p>
+      <p>We don’t cram features. We shape <strong>structures that let people act without hesitation</strong>. The three anchors:</p>
+      <ul class="philosophy-points">
+        <li><strong>Whitespace</strong> — room for information to breathe</li>
+        <li><strong>Intuition</strong> — the flow is obvious, without words</li>
+        <li><strong>Ripple</strong> — motion feels natural, like water</li>
+      </ul>
+    </section>
+
+    <section class="section trust" id="trust" aria-labelledby="trust-title">
+      <h2 id="trust-title">Grounded in Trust</h2>
+      <button class="accordion-toggle" aria-expanded="false" aria-controls="acc-trust">
+        View certifications & tech stack
+      </button>
+      <div id="acc-trust" class="accordion-content" role="region" aria-label="Certifications & Tech Stack" hidden>
+        <ul class="trust-list">
+          <li><strong>Microsoft Certified:</strong> “AI for Productivity” — 
+            <a href="https://github.com/user-attachments/assets/f3350dbc-2491-4946-af0b-9e0959b85ba2" target="_blank" rel="noopener">Certificate</a> /
+            <a href="https://github.com/truthwave/ai-productivity-cert-practical-output/tree/main/English" target="_blank" rel="noopener">GitHub</a></li>
+          <li><strong>PMI Certified:</strong> “Ethical AI Principles” — 
+            <a href="https://github.com/user-attachments/assets/93110864-c74b-4615-994d-a08397d5c0df" target="_blank" rel="noopener">Certificate</a> /
+            <a href="https://github.com/truthwave/ethical-genai-practices/tree/main/English" target="_blank" rel="noopener">GitHub</a></li>
+          <li><strong>Tech Stack:</strong> Next.js, Tailwind CSS, Supabase, OpenAI API, Vercel</li>
+        </ul>
+        <div class="external-links">
+          <a href="https://drive.google.com/file/d/1pc4m8KXk3ke-aLtMibzz-zgCiDFPjGgH/view?usp=sharing" target="_blank" rel="noopener">🧾 Proposal sample</a>
+          <a href="https://drive.google.com/file/d/1KNAuY0vCLjlczo19918mrhGLnTaymZXY/view?usp=sharing" target="_blank" rel="noopener">🧭 Structure diagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="next-wave">
       <h2>Begin the Next Ripple</h2>
-      <p>If something resonated with you —<br>Let’s talk. Even a small thought can spark something real.</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZqlT1lHF6tNUYDIBoBPDHhdqT6lYpDl_Kl7N2QauxoJv3_g/viewform?usp=header" target="_blank" class="cta cta--lg">Free Diagnosis →</a>
-      <br><br>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSefO9WQEQOMclfzoi7WNjl75KvJwqH9Ku17lMqb1FxlHE2hjg/viewform?usp=header" target="_blank" class="cta cta--secondary">Send Feedback →</a>
+      <p>If this resonated — the next move is ours.</p>
+      <p>We partner only when there’s resonance. Fragments welcome.<br>Tell us your <em>essence</em>.</p>
+
+      <div class="cta-inline" style="margin-top: 2rem;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZqlT1lHF6tNUYDIBoBPDHhdqT6lYpDl_Kl7N2QauxoJv3_g/viewform?usp=dialog"
+           class="cta cta--lg" target="_blank" rel="noopener">
+          Get a free assessment →
+        </a>
+      </div>
+      <div class="cta-inline" style="margin-top: 1rem;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSefO9WQEQOMclfzoi7WNjl75KvJwqH9Ku17lMqb1FxlHE2hjg/viewform?usp=header"
+           class="cta cta--secondary" target="_blank" rel="noopener">
+          Share feedback →
+        </a>
+      </div>
+      <p style="font-size: 0.9rem; margin-top: 1rem;">Assessment takes ~3 minutes. Anonymous is fine.</p>
     </section>
   </main>
+
   <footer class="footer">
     <h2>Contact</h2>
     <p>Let’s create the next wave together.</p>
@@ -103,12 +216,41 @@
     </div>
     <blockquote>“We don’t just ship tools. We deliver resonance.”</blockquote>
   </footer>
+
+  <div class="sticky-cta" role="complementary" aria-label="Floating action">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZqlT1lHF6tNUYDIBoBPDHhdqT6lYpDl_Kl7N2QauxoJv3_g/viewform?usp=dialog"
+       class="cta" target="_blank" rel="noopener" aria-label="Get a free assessment (opens in a new tab)">
+      Get a free assessment →
+    </a>
+  </div>
+
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.querySelector('.accordion-toggle');
-      toggle.addEventListener('click', () => {
-        toggle.classList.toggle('open');
+    // Stop ripple motion after hero to prioritize quietness
+    document.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero');
+      if (!hero) return;
+      const passed = window.scrollY > hero.offsetHeight * 0.6;
+      document.body.classList.toggle('ripple-paused', passed);
+    });
+
+    // Accordion: toggle aria & hidden
+    document.querySelectorAll('.accordion-toggle').forEach((btn) => {
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      if(!panel) return;
+      btn.setAttribute('aria-expanded','false');
+      panel.setAttribute('hidden','');
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        btn.classList.toggle('open', !open);
+        if(open){ panel.setAttribute('hidden',''); } else { panel.removeAttribute('hidden'); }
       });
+    });
+
+    // Lightbox close via Esc / backdrop
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') location.hash = '!'; });
+    document.querySelectorAll('.lb').forEach(d => {
+      d.addEventListener('click', (e) => { if (e.target === d) location.hash = '!'; });
     });
   </script>
 </body>
