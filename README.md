@@ -1,6 +1,5 @@
-<p align="center">
 ![デモ動画](https://github.com/user-attachments/assets/b59e8365-cdca-4759-9e9e-fed4336453be)
-</p>
+
 
 
 > **Think clearly. Build simply.**  
