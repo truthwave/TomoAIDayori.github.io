@@ -1,6 +1,7 @@
 <p align="center">
-  <img width="1536" alt="Truth Wave ― 真理の波" src="https://github.com/user-attachments/assets/your-gif-or-banner-url.gif" />
+![デモ動画](https://github.com/user-attachments/assets/b59e8365-cdca-4759-9e9e-fed4336453be)
 </p>
+
 
 > **Think clearly. Build simply.**  
 > ― 本質を、仕組みに。
