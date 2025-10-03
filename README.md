@@ -26,7 +26,7 @@ Truth Wave は、「真理は、波となって広がる」という信念をベ
 
 - キーワードを入れるだけで、VC向けの事業計画書が自動生成されるGPT
 - 投資家の心を動かす構成・トーンを再現
-- - [🔗 GitHubリポジトリ](https://github.com/truthwave/GPT-for-new-business-plan-proposals)
+- [🔗 GitHubリポジトリ](https://github.com/truthwave/GPT-for-new-business-plan-proposals)
 - [🔗 Coconala商品ページ](https://coconala.com/contents_market/pictures/cmfw6skpq099nal0huc9c9tzi)
 
 ---
@@ -37,7 +37,7 @@ Truth Wave は、「真理は、波となって広がる」という信念をベ
 - 財務指標と理論株価をもとに、投資価値を自動判定
 - 初心者〜中級者まで対応、コメントもバフェット調で出力
 - [🔗 GitHubリポジトリ](https://github.com/truthwave/Buffett-Graham-GPTs)
-- - [🔗 Coconala商品ページ](https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs)
+- [🔗 Coconala商品ページ](https://coconala.com/contents_market/pictures/cmez6ftdz0sjh6m0h0xdbo1gs)
 
 ---
 
