@@ -21,16 +21,6 @@ Truth Wave は、「真理は、波となって広がる」という信念をベ
 
 ## 🛠 主なツール・実績
 
-### ✅ 新規事業計画書作成GPT
-> 想いを、説得力ある“計画”に変える。
-
-- キーワードを入れるだけで、VC向けの事業計画書が自動生成されるGPT
-- 投資家の心を動かす構成・トーンを再現
-- [🔗 GitHubリポジトリ](https://github.com/truthwave/GPT-for-new-business-plan-proposals)
-- [🔗 Coconala商品ページ](https://coconala.com/contents_market/pictures/cmfw6skpq099nal0huc9c9tzi)
-
----
-
 ### ✅ 投資分析GPT（Buffett & Graham）
 > 「割安株」を、GPTの目で見抜く。
 
@@ -41,12 +31,14 @@ Truth Wave は、「真理は、波となって広がる」という信念をベ
 
 ---
 
-### ✅ プロンプト管理SaaS
+### ✅ メール効率化GPTs
 > チームやSNSで“共有できるプロンプト資産”を構築。
+- **シンプル操作**：コピー＆ペーストでそのまま使える  
+- **高品質な文面**：冒頭に感謝・結びに次ステップなど、即実務で使える形式  
+- **汎用性抜群**：顧客対応、フォローアップ、お礼、日程調整までカバー
+- [🔗 GitHubリポジトリ]([https://github.com/truthwave/my-ai-portfolio-clean](https://github.com/truthwave/mail-efficiency-gpts))
+- [🔗 Coconala商品ページ](https://coconala.com/contents_market/pictures/cmf3ndqpl00xr6s0houn6itv9)
 
-- ChatGPTや画像生成AIで使うプロンプトをタグ付きで整理・共有
-- Next.js × Supabase × Vercel による軽量設計
-- [🔗 GitHubリポジトリ](https://github.com/truthwave/my-ai-portfolio-clean)
 
 ---
 
