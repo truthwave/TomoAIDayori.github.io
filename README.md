@@ -1,5 +1,5 @@
 > **Think clearly. Build simply.**  
-> ― 本質を、仕組みに。
+> ― 本質を、仕組みに。<br>
 👉 [https://truth-wave-github-io.vercel.app/English/index.html](https://truth-wave-github-io.vercel.app/)
 
 ![デモ動画](https://github.com/user-attachments/assets/b59e8365-cdca-4759-9e9e-fed4336453be)
