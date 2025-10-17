@@ -1,8 +1,10 @@
-> **Think clearly. Build simply.**  
+<img width="1536" height="1024" alt="webページ (1)" src="https://github.com/user-attachments/assets/c3b7996e-9793-406f-8800-5ace66ae043d" />> **Think clearly. Build simply.**  
 > ― 本質を、仕組みに。<br>
 👉 [https://truth-wave-github-io.vercel.app/](https://truth-wave-github-io.vercel.app/)
 
-![デモ動画](https://github.com/user-attachments/assets/b59e8365-cdca-4759-9e9e-fed4336453be)
+<p align="center">
+<img width="1536" height="1024" alt="webページ (1)" src="https://github.com/user-attachments/assets/2f4177ff-86b5-4bcc-8673-acf8999fbf89" />
+</p>
 
 ---
 
