@@ -2,7 +2,9 @@
 > ― Capture the essence in the mechanism.<br>
 👉 [https://truth-wave-github-io.vercel.app/English/index.html](https://truth-wave-github-io.vercel.app/English/index.html)
 
-
+<p align="center">
+<img width="1536" height="1024" alt="webページ (2)" src="https://github.com/user-attachments/assets/a39c4939-e767-4a35-bf39-93fa3beb17a1" />
+</p>
 
 ---
 
