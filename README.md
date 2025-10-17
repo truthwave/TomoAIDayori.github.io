@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="webページ (1)" src="https://github.com/user-attachments/assets/c3b7996e-9793-406f-8800-5ace66ae043d" />> **Think clearly. Build simply.**  
+ **Think clearly. Build simply.**  
 > ― 本質を、仕組みに。<br>
 👉 [https://truth-wave-github-io.vercel.app/](https://truth-wave-github-io.vercel.app/)
 
